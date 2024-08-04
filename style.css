@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    border: 2px solid black;
+    height: 700px;
+    width: 700px;
+    margin: 100px auto;
+}
+
+.grid-boxes{
+    --each-side:16;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.new-box{
+    width: calc(100%/var(--each-side));
+    aspect-ratio:1;
+    overflow: hidden;
+    border: 1px solid black;
+    font-size: calc(15rem/var(--each-side));
+}
