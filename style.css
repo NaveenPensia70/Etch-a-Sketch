@@ -18,6 +18,7 @@
 
 .new-box{
     width: calc(100%/var(--each-side));
+    /* background-color:rgb(255,255,255); */
     aspect-ratio:1;
     overflow: hidden;
     border: 1px solid black;
